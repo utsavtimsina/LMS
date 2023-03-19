@@ -1,0 +1,135 @@
+:root {
+    --green: #006400;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right, #F3F8FF, lightskyblue);
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 130px;
+    margin: 5px;
+}
+
+
+.login-box {
+    background-color: ghostwhite;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.alert{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.alert .msg{
+    display: grid;
+    place-items: center;
+    width: 200px;
+    min-height: 20px;
+    background-color: var(--green);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.msg .cross{
+    transform: rotate(45deg);
+    float: right;
+    margin-left: 179px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.content,
+.login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    flex-direction: column;
+}
+
+.login-form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.user-icon {
+    text-align: center;
+    width: 100%;
+    background-color: var(--green);
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px 10px;
+}
+
+.form-group label {
+    font-size: 15px;
+    margin: 0 20px 2px;
+}
+
+.form-group input {
+    width: 310px;
+    height: 30px;
+    padding: 2px 10px;
+    background-color: white;
+    border: 2px solid var(--green);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.form-group input:hover{
+    background-color: rgba(0, 0, 0, 0);
+}
+.form-group div{
+    color: red;
+    font-size: 12px;
+    padding-left: 30px;
+}
+.pshow {
+    margin: 0 45px 10px;
+}
+
+.form-btn .fbtn {
+    padding: 5px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 30px 10px;
+}
+
+.fbtn:hover {
+    color: #006400;
+    background-color: white;
+    border: 2px solid var(--green);
+}

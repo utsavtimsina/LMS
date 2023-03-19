@@ -1,0 +1,50 @@
+:root {
+    --green: #006400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* body{
+    background: linear-gradient(to bottom right, #F3F8FF, lightskyblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
+header .title{
+    height: 25px;
+    background: linear-gradient(45deg, white,var(--green));
+    padding-left: 250px;
+    margin: 50px 0;
+    line-height: 25px;
+    display: flex;
+
+}
+.profile-content{
+    display: grid;
+    place-items: center;
+}
+
+.profile-dtl{
+    display: flex;
+    padding: 40px;
+    background-color: whitesmoke;
+    width: 1000px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    
+}
+
+.topic{
+    display: flex;
+    margin: 20px;
+}
+.topic h3,.topic h4{
+    font-size: 17px;
+}
+.topic h4{
+    font-weight: lighter;
+    margin-left: 4px;
+}

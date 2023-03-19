@@ -1,0 +1,103 @@
+:root {
+    --green: #006400;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+}
+
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 1200px;
+}
+
+table caption{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+.table th{
+    padding: 5px;
+    height: 30px;
+}
+.table td {
+    padding: 5px;
+    min-width: 20px;
+    max-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.203);
+}
+
+.table tr{
+    color: #000000;
+    text-align: left;
+}
+
+.table thead tr{
+    background-color: #00640061;
+    font-size: 14px;
+}
+
+.table tbody tr{
+    font-size: 14px;
+}
+
+.table tbody tr:nth-of-type(even){
+    background-color: whitesmoke;
+}
+.table tbody tr:nth-of-type(odd){
+    background-color: skyblue;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.actions .action-btn{
+    margin: 5px;
+}
+
+.actions .action-btn .all-btn{
+    width: 75px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.actions .action-btn .all-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.actions .action-btn .view-btn{
+    background-color: #007BFF;
+}
+
+.actions .action-btn .edit-btn{
+    background-color: #28A745;
+}
+
+.actions .action-btn .del-btn{
+    background-color: #DC3545;
+}
+.actions .action-btn .issue-btn{
+    background-color: #002147;
+}
+
+.actions .action-btn .return-btn{
+    background-color: orange;
+}
